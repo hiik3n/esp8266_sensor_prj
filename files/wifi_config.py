@@ -1,3 +1,3 @@
-WIFI_SSID = "Inspectorio-M2"
-WIFI_PWD = "Inspectorio@2017"
+WIFI_SSID = ""
+WIFI_PWD = ""
 
