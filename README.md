@@ -111,6 +111,8 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 
 			access http://micropython.org/webrepl/
 
+			ws://192.168.4.1:8266/
+
 			micropython - micropythoN
 
 		ap mode
