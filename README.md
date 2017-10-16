@@ -8,7 +8,6 @@ Use webrepl to remote monitoring and modify the code (something like OTA - Over 
 
 Push data to thinkspeak.com
 
-
 ## User Stories
 
 * [x] Setup environment
@@ -26,6 +25,10 @@ Push data to thinkspeak.com
 * [x] Publish data to cloud
 	* [x] Prepare database (thinkspeak.com)
 	* [x] Visualize Data (https://thingspeak.com/channels/347778)
+	
+![pic0](https://github.com/hiik3n/esp8266_sensor_prj/blob/master/files/pic_webrepl.png)
+
+![pic1](https://github.com/hiik3n/esp8266_sensor_prj/blob/master/files/pic_thinkspeak.png)
 
 ## Notes
 http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/index.html
