@@ -1,12 +1,12 @@
 # esp8266_sensor_prj
 
-Use esp8266 to read data from sensor, then push data to server
+Use esp8266 to read data from sensor (LM35, collected data is weird but can be used for example)
 
-Use MicroPython to develop firmware
+Use MicroPython to develop firmware (or software), python version is 2.7.10
 
-Use webrepl to remote monitoring and modify the code
+Use webrepl to remote monitoring and modify the code (something like OTA - Over the air)
 
-Python version is 2.7.10
+Push data to thinkspeak.com
 
 
 ## User Stories
@@ -17,15 +17,15 @@ Python version is 2.7.10
 	* [x] Download firmware for micropython
 	* [x] Play with micropython cmd
 
-* [ ] Data Acquisition
+* [x] Data Acquisition
 	* [x] LED indicator
 	* [x] Flash start-up fw
 	* [x] Play with WEBREPL
-	* [ ] Analog read
+	* [x] Analog read
 
-* [ ] Publish data to cloud
-	* [ ] Prepare database
-	* [ ] Visualize data
+* [x] Publish data to cloud
+	* [x] Prepare database (thinkspeak.com)
+	* [x] Visualize Data (https://thingspeak.com/channels/347778)
 
 ## Notes
 http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/index.html
@@ -35,6 +35,10 @@ https://cdn-learn.adafruit.com/downloads/pdf/micropython-basics-load-files-and-r
 https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl
 
 Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
+
+https://www.mathworks.com/help/thingspeak/update-a-channel.html
+
+https://thingspeak.com
 
 ## Logs
 * Check if driver for usb2uart available by
@@ -77,6 +81,10 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 	'/'
 
 	help()
+
+	soft reset
+	```import machine
+	machine.reset()```
 
 * Adafruit MicroPython tool to modify main.py for start-up firmware
 
