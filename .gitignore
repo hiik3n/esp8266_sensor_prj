@@ -1,5 +1,5 @@
 files/wifi_config.py 
-files/my_info.py
+# files/my_info.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
