@@ -57,7 +57,7 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 
 * REPL python
 
-	screen /dev/tty.SLAB_USBtoUART 115200
+	`screen /dev/tty.SLAB_USBtoUART 115200`
 
 	[Errno 16] Resource busy: '/dev/tty.SLAB_USBtoUART'
 
@@ -65,10 +65,10 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 		screen -x 27127
 		use ctr-A ctr-\ to close it properly```
 
-	>>> print("hello")
+	```>>> print("hello")
 	hello
 	>>> 1+1
-	2
+	2```
 
 	>>> import os
 	>>> os.listdir()
@@ -84,7 +84,7 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 
 	`ampy --port /dev/tty.SLAB_USBtoUART run test.py`
 
-	`ampy --port /dev/tty.SLAB_USBtoUART run --no-output  testv2.py 	(do not display any thing to console, used= REPL for moniotring)`
+	`ampy --port /dev/tty.SLAB_USBtoUART run --no-output  testv2.py'	(do not display any thing to console, used= REPL for moniotring)
 
 	`ampy --port /dev/tty.SLAB_USBtoUART put testfol`
 
