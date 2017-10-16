@@ -57,26 +57,26 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 
 * REPL python
 
-	`screen /dev/tty.SLAB_USBtoUART 115200`
+	screen /dev/tty.SLAB_USBtoUART 115200
 
 	[Errno 16] Resource busy: '/dev/tty.SLAB_USBtoUART'
 
-	```lsof | grep UART
-	screen -x 27127
-	use ctr-A ctr-\ to close it properly```
+		```lsof | grep UART
+		screen -x 27127
+		use ctr-A ctr-\ to close it properly```
 
-	```>>> print("hello")
+	>>> print("hello")
 	hello
 	>>> 1+1
-	2```
+	2
 
-	```>>> import os
+	>>> import os
 	>>> os.listdir()
 	['boot.py']
 	>>> os.getcwd()
-	'/'```
+	'/'
 
-	`help()`
+	help()
 
 * Adafruit MicroPython tool to modify main.py for start-up firmware
 
@@ -132,7 +132,7 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 
 		~~replace webrepl_setup to overide user confirmation~~
 
-		   ~~ampy --port /dev/tty.SLAB_USBtoUART put webrepl_setup.py~~
+		~~ampy --port /dev/tty.SLAB_USBtoUART put webrepl_setup.py~~
 
 		add testWebRepl.py to main.py
 
