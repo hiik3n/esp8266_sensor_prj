@@ -132,7 +132,7 @@ Paste multiple line in terminal: Crtl + E,  Ctrl-C to cancel, Ctrl-D to finish
 
 			~~replace webrepl_setup to overide user confirmation~~
 
-				~ampy --port /dev/tty.SLAB_USBtoUART put webrepl_setup.py~
+				~~ampy --port /dev/tty.SLAB_USBtoUART put webrepl_setup.py~~
 
 			add testWebRepl.py to main.py
 
