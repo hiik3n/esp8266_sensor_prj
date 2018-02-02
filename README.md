@@ -89,6 +89,7 @@ https://thingspeak.com
 	```import machine
 	machine.reset()```
 
+
 * Adafruit MicroPython tool to modify main.py for start-up firmware
 
 	`pip install adafruit-ampy`
@@ -148,5 +149,27 @@ https://thingspeak.com
 		add testWebRepl.py to main.py
 
 			ampy --port /dev/tty.SLAB_USBtoUART put testWebRepl.py /main.py
+	 
+	 * Program via WEBREPL (set Wifi User-Pwd, IP address)
+	 	
+		1. open http://micropython.org/webrepl/
+	 
+	 	2. Connect to Micropython8266_XXXXXX, pass micropythoN
+		
+		3. Back to http://micropython.org/webrepl/ , connect to esp via default address, pwd = USER_DEFINED
+		
+		4. Modify wifi_config.py to update Wifi user-pwd
+		
+		5. Run following in order to find the ip address (Optional if there is other way to find ip address of device when connectd to Network)
+			
+				import network
+				nic = network.WLAN(network.STA_IF)
+				nic.active(True)
+				nic.connect('your-ssid', 'your-password')
+				nic.ifconfig()
+
+		
+		
+		
 
 
